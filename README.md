@@ -42,13 +42,34 @@ So a roadmap written as plain bullets under a heading like "Phase 1 - Current" s
 
 You need Claude Code v2.1.287 or later.
 
-To try it for one session:
+This repo is also a small plugin marketplace called `docket`, so you can install it straight from GitHub. Inside Claude Code:
 
-```bash
-claude --plugin-dir ~/PINKPIXEL/PROJECTS/CURRENT/docket
+```
+/plugin marketplace add pinkpixel-dev/docket
+/plugin install docket@docket
 ```
 
-Then run `/docket` from inside any project.
+Or from your shell:
+
+```bash
+claude plugin marketplace add pinkpixel-dev/docket
+claude plugin install docket@docket
+```
+
+If a session is already open, run `/reload-plugins` to load it. Then run `/docket` from inside any project.
+
+Run `/plugin` and you should see `docket` in the `mods active` line under the tabs. To pick up new versions later, run `claude plugin marketplace update docket`.
+
+### Load it from a local folder
+
+If you've cloned the repo and want to hack on it, you can load it from the folder for one session instead:
+
+```bash
+git clone https://github.com/pinkpixel-dev/docket.git
+claude --plugin-dir ./docket
+```
+
+Claude Code watches that folder, so saving a file reloads the mod.
 
 ## Where it works
 
