@@ -1,0 +1,12 @@
+{
+  "name": "docket",
+  "description": "Claude Code mods by Pink Pixel",
+  "owner": { "name": "Pink Pixel", "email": "admin@pinkpixel.dev", "url": "https://pinkpixel.dev" },
+  "plugins": [
+    {
+      "name": "docket",
+      "source": "./",
+      "description": "A project context pane: roadmap progress, decisions, errors and releases from your DOCS, drawn with pixel visuals."
+    }
+  ]
+}

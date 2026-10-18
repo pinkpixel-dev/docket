@@ -1,0 +1,7 @@
+{
+  "name": "docket",
+  "version": "0.1.0",
+  "description": "A project context pane: roadmap progress, decisions, errors and releases from your DOCS, drawn with pixel visuals.",
+  "author": { "name": "Pink Pixel", "email": "admin@pinkpixel.dev", "url": "https://pinkpixel.dev" },
+  "license": "Apache-2.0"
+}
